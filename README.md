@@ -111,9 +111,9 @@ The system is being developed simulation-first so dangerous scenarios can be tes
 - Disaster zones
 - Roads and buildings
 - Rivers and terrain
-- Fire and flood scenarios
+- Time-evolving flood, fire, landslide, and structural-damage scenarios with ground-truth labels
 - Autonomous drones
-- Virtual sensors
+- Virtual RGB, thermal, water-level, rainfall, soil-moisture, and weather sensors with configurable noise
 - Docking stations
 
 The current software stack supports a 2D geospatial simulation and Unity integration. Simulated observations can also generate long historical sequences for training and evaluating prediction models.

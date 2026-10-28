@@ -44,6 +44,14 @@ namespace AeroSentinel
             observation.AddObservation(sensor.Humidity);
             observation.AddObservation(Anomaly == null ? 0f : Anomaly.GetAnomalyStrength(Controller.Position));
             observation.AddObservation(investigated ? 1f : 0f);
+            observation.AddObservation(sensor.GetGroundTruth(DisasterType.Fire).Severity);
+            observation.AddObservation(sensor.GetGroundTruth(DisasterType.Flood).Severity);
+            observation.AddObservation(sensor.GetGroundTruth(DisasterType.Landslide).Severity);
+            observation.AddObservation(sensor.GetGroundTruth(DisasterType.StructuralDamage).Severity);
+            observation.AddObservation(sensor.GetGroundTruth(DisasterType.Earthquake).Severity);
+            observation.AddObservation(Mathf.Clamp01(sensor.RainfallMmPerHour / 60f));
+            observation.AddObservation(Mathf.Clamp01(sensor.WindSpeedMetersPerSecond / 40f));
+            observation.AddObservation(Mathf.Clamp01(sensor.AmbientTemperatureCelsius / 60f));
         }
 
         public override void OnActionReceived(ActionBuffers actions)

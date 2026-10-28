@@ -9,9 +9,9 @@ Status: `skeleton` = interface + baseline exists; `todo` = scaffold only.
 | A4 | Backend API | `api/` | alerts, risk, health | Regions, observations, history queries, WebSocket fan-out |
 | B1 | Geo-simulator | `geosim/` | flood world | Fire spread, terrain, rainfall fields |
 | B2 | Synthetic data | `datagen/` | seasonal + flood events | Fire/landslide, Parquet export, labelled windows for D4 |
-| B3 | 3D world | `unity/.../World` | todo | Terrain, river, roads, buildings, dock |
-| B4 | Scenario engine | `unity/.../Scenarios` | flood skeleton | Fire, landslide, structural damage, ground-truth logs |
-| B5 | Virtual sensors | `unity/.../Sensors` | scalar + RGB | Thermal, weather, noise calibration |
+| B3 | 3D world | `unity/.../Mountain Terrain rocks and tree`, `unity/.../AeroSentinel/Scenes/Training 1.unity` | implemented | Mountain terrain, trees, rocks, camera, lighting, and training-scene integration |
+| B4 | Scenario engine | `unity/.../Disasters`, `unity/.../Scenes/Training 1.unity` | implemented | Single-scene time-stepped flood, fire, landslide, and structural-damage scenarios with queryable ground-truth labels and runtime controls |
+| B5 | Virtual sensors | `unity/.../Sensors`, `unity/.../Environment/TrainingControlPanel.cs` | implemented | RGB, thermal, water-level, rainfall, soil-moisture, and weather readings with seeded noise, dropout, and on-screen calibration controls |
 | C1 | Drone interfaces | `autonomy/mock_drone.py`, `unity_drone.py` | Mock + Unity bridge | Flight-stack adapter (after ADR-0002) |
 | C2 | Dock & battery | `autonomy/dock.py` | linear charge | Degradation, readiness rules |
 | C3 | Scheduler | `autonomy/scheduler.py` | interval loop | Failure recovery, multi-region, wall-clock mode |
