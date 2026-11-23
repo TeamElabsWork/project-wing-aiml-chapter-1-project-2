@@ -1,0 +1,79 @@
+{
+	"schema": "aero.sensor_record/1",
+	"drone_id": "DRN-001",
+	"sensor": "Weather",
+	"sample_index": 172,
+	"sim_seconds": 865.27767520025373,
+	"utc_iso": "2026-06-01T06:14:25.277Z",
+	"pose":
+	{
+		"engine_location_cm":
+		{
+			"x": 61604.483160942182,
+			"y": 162886.45412673612,
+			"z": 18478.169915619306
+		},
+		"engine_rotation_deg":
+		{
+			"pitch": -0,
+			"yaw": -173.02824401855469,
+			"roll": -0
+		},
+		"wgs84":
+		{
+			"latitude": 46.466400735325365,
+			"longitude": 6.9173558650247093,
+			"altitude_m": 564.7816991561931
+		}
+	},
+	"region":
+	{
+		"region_id": "Forest",
+		"region_name": "Forest",
+		"inside_zone_volume": true
+	},
+	"vehicle":
+	{
+		"state": "Patrolling",
+		"battery_fraction": 0.95234155654907227,
+		"battery_wh": 94.281814575195312
+	},
+	"ground_truth":
+	{
+		"disaster_type": "ForestFire",
+		"disaster_phase": "Developing",
+		"instance_id": "AeroFireActor_3",
+		"severity": 0.32170993089675903,
+		"affected_radius_cm": 6223.541015625,
+		"distance_to_origin_cm": 2080.000732421875,
+		"water_depth_cm": 0,
+		"fire_intensity": 0.38193950057029724
+	},
+	"weather":
+	{
+		"dropout": false,
+		"air_temperature_c_ground_truth": 67.772125244140625,
+		"air_temperature_c_measured": 67.475662231445312,
+		"wind_speed_mps_ground_truth": 2,
+		"wind_speed_mps_measured": 1.5970343351364136,
+		"precipitation_mm_per_hour_ground_truth": 0,
+		"precipitation_mm_per_hour_measured": 0.012632935307919979,
+		"visibility_m_ground_truth": 18116.767578125,
+		"visibility_m_measured": 17627.78515625,
+		"hazard_delta":
+		{
+			"temperature_delta_c": 45.772125244140625,
+			"visibility_loss_fraction": 0.27532929182052612
+		},
+		"atmosphere_ground_truth":
+		{
+			"cloud_coverage": 0.05000000074505806,
+			"fog_density": 0.0080000003799796104,
+			"sun_intensity": 10,
+			"sky_light_intensity": 1
+		},
+		"sensor_bias_c": 0.10000000149011612,
+		"sensor_sigma_c": 0.40000000596046448,
+		"dropout_probability": 0.019999999552965164
+	}
+}

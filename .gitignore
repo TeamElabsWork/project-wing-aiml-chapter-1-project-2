@@ -6,7 +6,16 @@ runs/
 *.pt
 data/
 node_modules/
-# Unity
+# Unreal Engine
+unreal/**/Binaries/
+unreal/**/DerivedDataCache/
+unreal/**/Intermediate/
+unreal/**/Saved/
+unreal/**/.vs/
+unreal/**/*.VC.db
+unreal/**/*.suo
+
+# Legacy Unity checkout
 unity/**/[Ll]ibrary/
 unity/**/[Tt]emp/
 unity/**/[Oo]bj/

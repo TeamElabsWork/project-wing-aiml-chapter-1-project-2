@@ -1,0 +1,65 @@
+{
+	"schema": "aero.sensor_record/1",
+	"drone_id": "DRN-001",
+	"sensor": "Weather",
+	"sample_index": 71,
+	"sim_seconds": 360.27767520025373,
+	"utc_iso": "2026-06-01T06:06:00.277Z",
+	"pose":
+	{
+		"engine_location_cm":
+		{
+			"x": 67950.433551426235,
+			"y": 148799.82398422685,
+			"z": 18477.745748561971
+		},
+		"engine_rotation_deg":
+		{
+			"pitch": 0,
+			"yaw": 89.746437072753935,
+			"roll": -0
+		},
+		"wgs84":
+		{
+			"latitude": 46.467637219687212,
+			"longitude": 6.9182713420238144,
+			"altitude_m": 564.77745748561972
+		}
+	},
+	"region":
+	{
+		"region_id": "Forest",
+		"region_name": "Forest",
+		"inside_zone_volume": true
+	},
+	"vehicle":
+	{
+		"state": "Patrolling",
+		"battery_fraction": 0.98799079656600952,
+		"battery_wh": 97.811088562011719
+	},
+	"ground_truth":
+	{
+		"disaster_type": "None",
+		"disaster_phase": "Idle"
+	},
+	"weather":
+	{
+		"dropout": true,
+		"hazard_delta":
+		{
+			"temperature_delta_c": 0,
+			"visibility_loss_fraction": 0.31925112009048462
+		},
+		"atmosphere_ground_truth":
+		{
+			"cloud_coverage": 0.05000000074505806,
+			"fog_density": 0.0080000003799796104,
+			"sun_intensity": 10,
+			"sky_light_intensity": 1
+		},
+		"sensor_bias_c": 0.10000000149011612,
+		"sensor_sigma_c": 0.40000000596046448,
+		"dropout_probability": 0.019999999552965164
+	}
+}

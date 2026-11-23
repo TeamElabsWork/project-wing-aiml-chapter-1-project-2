@@ -1,6 +1,6 @@
 """E2: end-to-end smoke test on every merge.
 dock -> patrol (MockDrone in 2D geo-sim) -> ingest -> detect -> measure -> investigate -> alert -> API.
-Swap MockDrone for UnityDrone (marked `unity`) to run the identical flow against the 3D world."""
+The same DroneInterface boundary is used by the Unreal adapter for 3D integration."""
 from datetime import datetime, timedelta, timezone
 
 from aerosentinel.api.app import create_app

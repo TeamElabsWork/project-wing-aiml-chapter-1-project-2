@@ -1,0 +1,85 @@
+{
+  "schema": "aerosentinel.sim.config/1",
+  "project": "AeroSentineal",
+  "engine_version": "5.8.4",
+  "level": "/Game/AeroSentinel/World/Levels/L_AeroValley",
+  "geo": {
+    "geographic_crs": "EPSG:4326",
+    "projected_crs": "EPSG:32631",
+    "planet_shape": "FlatPlanet",
+    "origin": {
+      "latitude": 46.4813,
+      "longitude": 6.9104,
+      "altitude_m": 380.0
+    },
+    "region": {
+      "extent_m": [
+        2016.0,
+        2016.0
+      ],
+      "engine_bounds_cm": [
+        0.0,
+        2016.0,
+        0.0,
+        2016.0
+      ],
+      "surface_z_m": [
+        20.69,
+        123.11
+      ],
+      "surface_altitude_asl_m": [
+        400.69,
+        503.11
+      ]
+    },
+    "units": "unreal_uu_is_centimetre",
+    "note": "Unreal world origin (0,0,0) is the south-west corner of the region and maps to origin latitude/longitude/altitude_m. Round trip is exact to 0.000001 m."
+  },
+  "time": {
+    "start_utc": "2026-06-01T06:00:00.000Z",
+    "default_time_multiplier": 1.0,
+    "timestamp_format": "iso8601_utc_ms"
+  },
+  "ids": {
+    "drone_id": "DRN-001"
+  },
+  "dataset_root": "Simulation/Datasets",
+  "dataset_folders": [
+    "RGB",
+    "Thermal",
+    "Annotations",
+    "GroundTruth",
+    "Telemetry",
+    "Sensors",
+    "Events",
+    "Weather",
+    "Gas",
+    "WaterLevel",
+    "Rainfall",
+    "SoilMoisture"
+  ],
+  "zones": [
+    "Forest",
+    "RiverFloodplain",
+    "Village",
+    "Hilly",
+    "Industrial"
+  ],
+  "disaster_types": [
+    "Flood",
+    "ForestFire",
+    "Landslide",
+    "StructuralDamage"
+  ],
+  "drone_states": [
+    "Docked",
+    "TakingOff",
+    "Ascending",
+    "Patrolling",
+    "Investigating",
+    "Returning",
+    "Landing",
+    "Charging",
+    "Idle"
+  ]
+}

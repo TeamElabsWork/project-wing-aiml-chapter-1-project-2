@@ -1,6 +1,6 @@
 """D1 training entry point.  python -m aerosentinel.perception.train_yolo --data data/hazards.yaml
 
-Dataset prep: images + labels exported from Unity (see unity/.../Scenarios) in YOLO format;
+Dataset prep: images + labels exported from Unreal (see unreal/AeroSentineal/Simulation) in YOLO format;
 write a data YAML with classes: flood, fire, smoke, landslide, crack.
 """
 from __future__ import annotations

@@ -1,0 +1,68 @@
+{
+	"schema": "aero.sensor_record/1",
+	"drone_id": "DRN-001",
+	"sensor": "Gas",
+	"sample_index": 172,
+	"sim_seconds": 865.27767520025373,
+	"utc_iso": "2026-06-01T06:14:25.277Z",
+	"pose":
+	{
+		"engine_location_cm":
+		{
+			"x": 61604.483160942182,
+			"y": 162886.45412673612,
+			"z": 18478.169915619306
+		},
+		"engine_rotation_deg":
+		{
+			"pitch": -0,
+			"yaw": -173.02824401855469,
+			"roll": -0
+		},
+		"wgs84":
+		{
+			"latitude": 46.466400735325365,
+			"longitude": 6.9173558650247093,
+			"altitude_m": 564.7816991561931
+		}
+	},
+	"region":
+	{
+		"region_id": "Forest",
+		"region_name": "Forest",
+		"inside_zone_volume": true
+	},
+	"vehicle":
+	{
+		"state": "Patrolling",
+		"battery_fraction": 0.95234155654907227,
+		"battery_wh": 94.281814575195312
+	},
+	"ground_truth":
+	{
+		"disaster_type": "ForestFire",
+		"disaster_phase": "Developing",
+		"instance_id": "AeroFireActor_3",
+		"severity": 0.32170993089675903,
+		"affected_radius_cm": 6223.541015625,
+		"distance_to_origin_cm": 2080.000732421875,
+		"water_depth_cm": 0,
+		"fire_intensity": 0.38193950057029724
+	},
+	"gas":
+	{
+		"dropout": false,
+		"co2_ppm_ground_truth": 648.860595703125,
+		"co2_ppm_measured": 658.88360595703125,
+		"pm25_ug_per_m3_ground_truth": 283.32931518554688,
+		"pm25_ug_per_m3_measured": 284.02923583984375,
+		"co2_bias_ppm": 6,
+		"co2_sigma_ppm": 12,
+		"pm25_bias_ug_per_m3": 0.5,
+		"pm25_sigma_ug_per_m3": 1.2000000476837158,
+		"dropout_probability": 0.019999999552965164,
+		"ground_truth_source": "ambient_background_plus_live_hazard_emission",
+		"hazard_co2_delta_ppm": 228.86062622070312,
+		"hazard_pm25_delta_ug_per_m3": 275.32931518554688
+	}
+}

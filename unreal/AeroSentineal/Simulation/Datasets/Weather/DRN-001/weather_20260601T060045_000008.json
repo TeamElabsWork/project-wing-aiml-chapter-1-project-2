@@ -1,0 +1,73 @@
+{
+	"schema": "aero.sensor_record/1",
+	"drone_id": "DRN-001",
+	"sensor": "Weather",
+	"sample_index": 8,
+	"sim_seconds": 45.045871943235397,
+	"utc_iso": "2026-06-01T06:00:45.045Z",
+	"pose":
+	{
+		"engine_location_cm":
+		{
+			"x": 38000,
+			"y": 130000,
+			"z": 15734.538232215864
+		},
+		"engine_rotation_deg":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": -0
+		},
+		"wgs84":
+		{
+			"latitude": 46.469458643852363,
+			"longitude": 6.9145007087989585,
+			"altitude_m": 537.34538232215868
+		}
+	},
+	"region":
+	{
+		"region_id": "Forest",
+		"region_name": "Forest",
+		"inside_zone_volume": true
+	},
+	"vehicle":
+	{
+		"state": "Ascending",
+		"battery_fraction": 0.98171281814575195,
+		"battery_wh": 97.189567565917969
+	},
+	"ground_truth":
+	{
+		"disaster_type": "None",
+		"disaster_phase": "Idle"
+	},
+	"weather":
+	{
+		"dropout": false,
+		"air_temperature_c_ground_truth": 11,
+		"air_temperature_c_measured": 10.593771934509277,
+		"wind_speed_mps_ground_truth": 20,
+		"wind_speed_mps_measured": 19.880643844604492,
+		"precipitation_mm_per_hour_ground_truth": 25,
+		"precipitation_mm_per_hour_measured": 24.97517204284668,
+		"visibility_m_ground_truth": 2200,
+		"visibility_m_measured": 2249.247802734375,
+		"hazard_delta":
+		{
+			"temperature_delta_c": 0,
+			"visibility_loss_fraction": 0
+		},
+		"atmosphere_ground_truth":
+		{
+			"cloud_coverage": 1,
+			"fog_density": 0.05000000074505806,
+			"sun_intensity": 0.5,
+			"sky_light_intensity": 0.55000001192092896
+		},
+		"sensor_bias_c": 0.10000000149011612,
+		"sensor_sigma_c": 0.40000000596046448,
+		"dropout_probability": 0.019999999552965164
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"schema": "aero.sensor_record/1",
+	"drone_id": "DRN-001",
+	"sensor": "Thermal",
+	"sample_index": 46,
+	"sim_seconds": 288.99291279911995,
+	"utc_iso": "2026-06-01T06:04:48.992Z",
+	"pose":
+	{
+		"engine_location_cm":
+		{
+			"x": 64149.423252522523,
+			"y": 130000,
+			"z": 18442.959695310346
+		},
+		"engine_rotation_deg":
+		{
+			"pitch": -14.999999999999996,
+			"yaw": 0,
+			"roll": -0
+		},
+		"wgs84":
+		{
+			"latitude": 46.469342115139057,
+			"longitude": 6.9178987287477689,
+			"altitude_m": 564.42959695310344
+		}
+	},
+	"region":
+	{
+		"region_id": "Forest",
+		"region_name": "Forest",
+		"inside_zone_volume": true
+	},
+	"vehicle":
+	{
+		"state": "Docked",
+		"battery_fraction": 1,
+		"battery_wh": 99
+	},
+	"ground_truth":
+	{
+		"disaster_type": "None",
+		"disaster_phase": "Idle"
+	},
+	"frame_file": "thermal_20260601T060448_000046.png",
+	"camera":
+	{
+		"width": 320,
+		"height": 240,
+		"fov_deg": 60
+	},
+	"thermal":
+	{
+		"ambient_air_c_ground_truth": 22,
+		"dropout": false,
+		"ambient_air_c_measured": 24.010524749755859,
+		"sensor_bias_c": 0.25,
+		"sensor_sigma_c": 0.80000001192092896,
+		"dropout_probability": 0.019999999552965164,
+		"image_kind": "false_colour"
+	}
+}

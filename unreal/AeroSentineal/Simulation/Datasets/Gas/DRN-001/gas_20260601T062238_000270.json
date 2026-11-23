@@ -1,0 +1,58 @@
+{
+	"schema": "aero.sensor_record/1",
+	"drone_id": "DRN-001",
+	"sensor": "Gas",
+	"sample_index": 270,
+	"sim_seconds": 1358.4929127991199,
+	"utc_iso": "2026-06-01T06:22:38.492Z",
+	"pose":
+	{
+		"engine_location_cm":
+		{
+			"x": 47200.005717746317,
+			"y": 130000,
+			"z": 18478.169921875
+		},
+		"engine_rotation_deg":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": -0
+		},
+		"wgs84":
+		{
+			"latitude": 46.469417657690663,
+			"longitude": 6.9156962176050811,
+			"altitude_m": 564.78169921874996
+		}
+	},
+	"region":
+	{
+		"region_id": "Forest",
+		"region_name": "Forest",
+		"inside_zone_volume": true
+	},
+	"vehicle":
+	{
+		"state": "Patrolling",
+		"battery_fraction": 0.95227080583572388,
+		"battery_wh": 94.274810791015625
+	},
+	"ground_truth":
+	{
+		"disaster_type": "None",
+		"disaster_phase": "Idle"
+	},
+	"gas":
+	{
+		"dropout": true,
+		"co2_bias_ppm": 6,
+		"co2_sigma_ppm": 12,
+		"pm25_bias_ug_per_m3": 0.5,
+		"pm25_sigma_ug_per_m3": 1.2000000476837158,
+		"dropout_probability": 0.019999999552965164,
+		"ground_truth_source": "configured_ambient_background",
+		"hazard_co2_delta_ppm": 0,
+		"hazard_pm25_delta_ug_per_m3": 0
+	}
+}

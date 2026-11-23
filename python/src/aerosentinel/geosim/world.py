@@ -1,4 +1,4 @@
-"""B1: lightweight 2D geo-simulator. Fast stand-in for the Unity world.
+"""B1: lightweight 2D geo-simulator. Fast stand-in for the Unreal world.
 
 Implements the `World` protocol used by MockDrone, so the pipeline runs end-to-end
 before any 3D asset exists. Add fire spread, terrain, rain fields here.

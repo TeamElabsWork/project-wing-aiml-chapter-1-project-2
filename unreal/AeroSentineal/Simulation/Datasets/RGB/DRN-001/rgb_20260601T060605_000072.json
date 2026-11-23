@@ -1,0 +1,59 @@
+{
+	"schema": "aero.sensor_record/1",
+	"drone_id": "DRN-001",
+	"sensor": "RGB",
+	"sample_index": 72,
+	"sim_seconds": 365.27767520025373,
+	"utc_iso": "2026-06-01T06:06:05.277Z",
+	"pose":
+	{
+		"engine_location_cm":
+		{
+			"x": 67985.952333504611,
+			"y": 156825.74905400135,
+			"z": 18479.048721910254
+		},
+		"engine_rotation_deg":
+		{
+			"pitch": -14.999999999999998,
+			"yaw": 89.746437072753906,
+			"roll": -0
+		},
+		"wgs84":
+		{
+			"latitude": 46.46691645061783,
+			"longitude": 6.9182241707230343,
+			"altitude_m": 564.79048721910249
+		}
+	},
+	"region":
+	{
+		"region_id": "Forest",
+		"region_name": "Forest",
+		"inside_zone_volume": true
+	},
+	"vehicle":
+	{
+		"state": "Patrolling",
+		"battery_fraction": 0.98443657159805298,
+		"battery_wh": 97.459220886230469
+	},
+	"ground_truth":
+	{
+		"disaster_type": "ForestFire",
+		"disaster_phase": "Developing",
+		"instance_id": "AeroFireActor_1",
+		"severity": 0.71624839305877686,
+		"affected_radius_cm": 12874.8603515625,
+		"distance_to_origin_cm": 7647.96435546875,
+		"water_depth_cm": 0,
+		"fire_intensity": 0.8503422737121582
+	},
+	"frame_file": "rgb_20260601T060605_000072.png",
+	"camera":
+	{
+		"width": 640,
+		"height": 480,
+		"fov_deg": 60
+	}
+}

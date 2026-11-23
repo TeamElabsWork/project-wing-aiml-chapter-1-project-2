@@ -24,7 +24,7 @@ def offset(p: GeoPoint, north_m: float = 0.0, east_m: float = 0.0, alt_m: float 
 
 
 def to_local_m(origin: GeoPoint, p: GeoPoint) -> tuple[float, float]:
-    """(east, north) metres of p relative to origin. Matches Unity's x/z mapping."""
+    """(east, north) metres of p relative to origin. Matches the Unreal geo contract."""
     north = math.radians(p.lat - origin.lat) * EARTH_RADIUS_M
     east = math.radians(p.lon - origin.lon) * EARTH_RADIUS_M * math.cos(math.radians(origin.lat))
     return east, north
