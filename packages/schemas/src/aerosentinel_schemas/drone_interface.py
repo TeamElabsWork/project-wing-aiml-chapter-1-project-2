@@ -1,6 +1,6 @@
 """DroneInterface: the single hardware-abstraction boundary (section 1.1).
 
-Implementations: MockDrone, UnityDrone (TCP bridge), a flight-stack adapter, RealDrone (Plan 2).
+Implementations: MockDrone, UnrealDrone (transport adapter), a flight-stack adapter, RealDrone (Plan 2).
 No other module may depend on which one is active.
 """
 from __future__ import annotations

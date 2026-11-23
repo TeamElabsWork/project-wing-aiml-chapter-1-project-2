@@ -1,0 +1,53 @@
+{
+	"schema": "aero.sensor_record/1",
+	"drone_id": "DRN-001",
+	"sensor": "RGB",
+	"sample_index": 178,
+	"sim_seconds": 895.27767520025373,
+	"utc_iso": "2026-06-01T06:14:55.277Z",
+	"pose":
+	{
+		"engine_location_cm":
+		{
+			"x": 38033.358415601739,
+			"y": 135596.2620681852,
+			"z": 18479.169921866131
+		},
+		"engine_rotation_deg":
+		{
+			"pitch": -14.999999999999996,
+			"yaw": -90.341522216796847,
+			"roll": -0
+		},
+		"wgs84":
+		{
+			"latitude": 46.468956030669787,
+			"longitude": 6.9144689663523078,
+			"altitude_m": 564.79169921866128
+		}
+	},
+	"region":
+	{
+		"region_id": "Forest",
+		"region_name": "Forest",
+		"inside_zone_volume": true
+	},
+	"vehicle":
+	{
+		"state": "Patrolling",
+		"battery_fraction": 0.93101626634597778,
+		"battery_wh": 92.170608520507812
+	},
+	"ground_truth":
+	{
+		"disaster_type": "None",
+		"disaster_phase": "Idle"
+	},
+	"frame_file": "rgb_20260601T061455_000178.png",
+	"camera":
+	{
+		"width": 640,
+		"height": 480,
+		"fov_deg": 60
+	}
+}

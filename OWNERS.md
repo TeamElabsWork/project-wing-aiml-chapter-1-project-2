@@ -6,7 +6,7 @@
 | 2 | | A4, E2 (integration owner) | A2 (member 1) |
 | 3 | | E1 dashboard | A4 (member 2) |
 | 4 | | B1, B2 | D3/D4 data side (member 8) |
-| 5 | | B3, B4, B5 | C1 Unity adapter (member 6) |
+| 5 | | B3, B4, B5 | C1 Unreal adapter (member 6) |
 | 6 | | C1, C2, C3, C4 | B3 (member 5) |
 | 7 | | D1, D2, C5 | D5 (member 8) |
 | 8 | | D3, D4, D5 | D1/D2 (member 7) |

@@ -36,7 +36,7 @@ During each patrol, it collects:
 The observations are ingested, stored, analyzed, and exposed through the API and dashboard:
 
 ```text
-Drone / Unity simulation
+Drone / Unreal Engine simulation
         |
         v
 Observation -> Ingestion -> Historical storage
@@ -116,13 +116,13 @@ The system is being developed simulation-first so dangerous scenarios can be tes
 - Virtual RGB, thermal, water-level, rainfall, soil-moisture, and weather sensors with configurable noise
 - Docking stations
 
-The current software stack supports a 2D geospatial simulation and Unity integration. Simulated observations can also generate long historical sequences for training and evaluating prediction models.
+The current software stack supports a 2D geospatial simulation and Unreal Engine integration. Simulated observations can also generate long historical sequences for training and evaluating prediction models.
 
 ## Technology
 
 The planned and implemented components include:
 
-- **Simulation:** Unity 3D, with an extensible path toward AirSim / Unreal Engine
+- **Simulation:** Unreal Engine 5, with an extensible path toward AirSim / ROS 2 / PX4
 - **Flight and autonomy:** Python autonomy modules, with a path toward ROS 2 + PX4
 - **Perception:** Python, PyTorch, YOLO, and OpenCV
 - **Prediction:** Scikit-learn, XGBoost, pandas, and LSTM-based models
@@ -134,7 +134,7 @@ The planned and implemented components include:
 
 ```text
                 +-----------------------------------------------+
-  Unity 3D  --> | DroneInterface (MockDrone | UnityDrone | ...) | <-- RealDrone
+  Unreal 5  --> | DroneInterface (MockDrone | UnrealDrone | ...) | <-- RealDrone
                 +----------------------+------------------------+
                                        |
                          Scheduler -> Planner -> Investigation
@@ -164,7 +164,7 @@ make api                # FastAPI on http://localhost:8000
 make install-ml         # optional heavy ML dependencies
 ```
 
-API documentation is available at `http://localhost:8000/docs` after starting the API. For Unity setup, see [`unity/AeroSentinel/README.md`](unity/AeroSentinel/README.md). To start the database, object storage, and API services together:
+API documentation is available at `http://localhost:8000/docs` after starting the API. For Unreal setup, see [`unreal/AeroSentineal/Documentation/PHASE_1_REPORT.md`](unreal/AeroSentineal/Documentation/PHASE_1_REPORT.md). To start the database, object storage, and API services together:
 
 ```bash
 docker compose up
@@ -182,7 +182,7 @@ docker compose up
 | [`python/src/aerosentinel/autonomy/`](python/src/aerosentinel/autonomy/) | Scheduling, planning, docking, and investigation |
 | [`python/src/aerosentinel/perception/`](python/src/aerosentinel/perception/) | Detection and measurement |
 | [`python/src/aerosentinel/intelligence/`](python/src/aerosentinel/intelligence/) | Trends, risk prediction, and alerts |
-| [`unity/AeroSentinel/`](unity/AeroSentinel/) | Unity simulation components |
+| [`unreal/AeroSentineal/`](unreal/AeroSentineal/) | Unreal Engine simulation project |
 | [`dashboard/`](dashboard/) | Dashboard scaffold |
 | [`integration/`](integration/) | End-to-end tests |
 
@@ -192,7 +192,7 @@ See [`docs/architecture.md`](docs/architecture.md), [`docs/contracts.md`](docs/c
 
 1. **Contracts first.** Shared schemas are versioned before dependent implementations change.
 2. **One boundary to the drone.** Only `DroneInterface` communicates with a drone; switching from simulation to a real vehicle is an integration/configuration change.
-3. **Build against mocks.** Modules can run with `MockDrone`, `FloodWorld`, and `InMemoryRepository` without Unity or a database.
+3. **Build against mocks.** Modules can run with `MockDrone`, `FloodWorld`, and `InMemoryRepository` without Unreal or a database.
 4. **Investigate before alerting.** Detection can trigger an evidence-gathering mission rather than relying on a single observation.
 5. **Track change over time.** Historical observations are first-class data for trend analysis and risk prediction.
 6. **Use consistent geography and time.** The system uses WGS84, UTC-aware timestamps, and `region-xxx` / `region-xxx/z-yy` identifiers.
